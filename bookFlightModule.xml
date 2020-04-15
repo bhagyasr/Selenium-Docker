@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+  
+<suite name="FlightModule"  parallel="tests" verbose="1" >
+
+  <test name="BookFlight-1" >
+  <parameter name="noOfPassengers" value="2"/>
+  <parameter name="expectedPrice" value="$1169 USD"/>
+    <classes>
+       <class name="com.newtours.test.BookFlightTest" />
+    </classes>
+  </test>
+ 
+  <test name="BookFlight-2">
+   <parameter name="noOfPassengers" value="3"/>
+   <parameter name="expectedPrice" value="$1169 USD"/>
+    <classes>
+      <class name="com.newtours.test.BookFlightTest" />
+    </classes>
+  </test>
+  
+   <test name="BookFlight-3">
+    <parameter name="noOfPassengers" value="4"/>
+   <parameter name="expectedPrice" value="$2338 USD"/>
+    <classes>
+      <class name="com.newtours.test.BookFlightTest" />
+    </classes>
+  </test>
+  
+</suite>

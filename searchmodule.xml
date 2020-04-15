@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="duckModule" verbose="1" >
+  <test name="searchModule-1" >
+  <parameter name="toSearch" value="java"/>
+    <classes>
+       <class name="com.searchModule.test.searchTest" />
+    </classes>
+  </test>
+ 
+  <test name="searchModule-2">
+     <parameter name="toSearch" value="Python"/>
+    <classes>
+      <class name="com.searchModule.test.searchTest" />
+    </classes>
+  </test>
+</suite>
