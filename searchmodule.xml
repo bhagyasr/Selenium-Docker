@@ -14,4 +14,12 @@
       <class name="com.searchModule.test.searchTest" />
     </classes>
   </test>
+  
+  <test name="uploadModule-3">
+     <parameter name="toUpload" value="ss.png"/>
+    <classes>
+      <class name="com.searchModule.test.uploadTest" />
+    </classes>
+  </test>
+  
 </suite>

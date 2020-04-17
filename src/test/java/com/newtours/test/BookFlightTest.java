@@ -7,7 +7,8 @@ import com.newtours.pages.FlightConfirmationPage;
 import com.newtours.pages.FlightDetailsPage;
 import com.newtours.pages.RegistrationConfirmation;
 
-import junit.framework.Assert;
+import org.testng.Assert;
+
 
 public class BookFlightTest extends BaseTest{
 

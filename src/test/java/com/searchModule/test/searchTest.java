@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 import com.newtours.test.BaseTest;
 import com.searchModule.pages.searchPage;
 
-import junit.framework.Assert;
+import org.testng.Assert;
 
 
 public class searchTest extends BaseTest {
@@ -28,7 +28,7 @@ public class searchTest extends BaseTest {
 	public void search()
 	{
 		searchPage sp = new searchPage(driver);
-		System.out.println("-----here-----insearchtest"+driver.getTitle());
+		//System.out.println("-----here-----insearchtest"+driver.getTitle());
 		sp.goTo();
 		sp.search(toSearch);
 		int size=sp.findVideos();

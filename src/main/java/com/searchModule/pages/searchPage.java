@@ -34,7 +34,7 @@ public class searchPage {
 	
 	public void goTo()
 	{
-		System.out.println("-------before----here----"+ driver.getTitle());
+		//System.out.println("-------before----here----"+ driver.getTitle());
 		driver.get("https://duckduckgo.com/");
 	}
 	
