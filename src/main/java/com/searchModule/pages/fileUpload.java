@@ -84,7 +84,7 @@ public class fileUpload {
         //}
 			
         ((RemoteWebDriver) driver).setFileDetector(new LocalFileDetector());
-    	String path1 = System.getProperty("user.dir")+new File("/ss.png").getAbsolutePath(); // project pic  file location
+    	String path1 = System.getProperty("user.dir")+new File("/"+path).getAbsolutePath(); // project pic  file location
     	
         this.fileUpload.sendKeys(path1);
         this.uploadBtn.click();
