@@ -13,6 +13,7 @@ ADD target/selenium-docker-tests.jar selenium-docker-tests.jar
 ADD target/libs libs
 ADD bookFlightModule.xml bookFlightModule.xml
 ADD searchmodule.xml searchmodule.xml
+ADD src/test/java/ss.png ss.png
 
 #ADD healthcheck script
 ADD healthcheck.sh healthcheck.sh

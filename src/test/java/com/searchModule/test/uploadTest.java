@@ -6,8 +6,6 @@ import org.testng.annotations.Test;
 import com.newtours.test.BaseTest;
 import com.searchModule.pages.fileUpload;
 
-import java.io.File;
-
 import org.testng.Assert;
 
 public class uploadTest extends BaseTest{
@@ -31,10 +29,10 @@ public class uploadTest extends BaseTest{
 		fileUpload sp = new fileUpload(driver);
 		sp.goToURL();
 		
-		File uploadedFile = new File("./src/test/java/ss.png"); // project pic  file location
-		//String path = System.getProperty("user.dir") +"/src/test/java/ss.png";
+		//String path = new File("/src/test/java/ss.png").getAbsolutePath(); // project pic  file location
+		//String path = "./src/test/java/ss.png";
 		
-		sp.startUpload(uploadedFile.getAbsolutePath());
+		sp.startUpload(toUpload);
 		
 		boolean status= sp.checkUpload();
 		System.out.println("upload status----"+status);

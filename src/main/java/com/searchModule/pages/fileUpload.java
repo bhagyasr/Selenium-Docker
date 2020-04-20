@@ -80,10 +80,15 @@ public class fileUpload {
 		 wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("file-upload")));
 		 
 		try {
-            ((RemoteWebDriver) driver).setFileDetector(new LocalFileDetector());
+           // ((RemoteWebDriver) driver).setFileDetector(new LocalFileDetector());
         //}
-        this.fileUpload.sendKeys(path);
+			
+        ((RemoteWebDriver) driver).setFileDetector(new LocalFileDetector());
+    	String path1 = System.getProperty("user.dir")+new File("/ss.png").getAbsolutePath(); // project pic  file location
+    	
+        this.fileUpload.sendKeys(path1);
         this.uploadBtn.click();
+        driver.getTitle();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("uploaded-files")));
 		}
 		catch(Exception e)
